@@ -1,0 +1,21 @@
+section.section_hero
+    .hero__bg
+        img(src='./source/images/bg.png').hero__bg-img
+    -var socials = [ {item:'vk', link:'vk.com/ritsu31213779'}, {item:'github', link:'github.com/RishaBond'}, {item:'codepen', link:'codepen.io/risha686/'}]
+    .hero__socials
+        ul.socials__list
+            each social in socials
+                li.socials__item
+                    a(href='${social.link}' class='socials__link socials__link--${social.item}' target="_blank")
+                    img(src="")
+    .hamburger
+        a(href="#").hamburger__link
+        img(src="#")
+    .hero__container
+        .hero-user.user
+            .user-img
+                img(src="../assets/img/photo.png")
+            h1.user__name Бондаренко Ирина
+            p.user__desc Личный сайт веб разработчика
+
+
