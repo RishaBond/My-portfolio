@@ -1,0 +1,38 @@
+.wrapper{
+  height:600px;
+  overflow: hidden;
+  position: relative;
+}
+.hero__bg-img{
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100%;
+  transform: translateX(-50%);
+}
+.user{
+  text-align: center;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+.welcome{
+  background: rgba(0, 0, 0, 0.3);
+}
+.user__pic-container{
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-bottom: 25px;
+}
+.user__name{
+  margin-bottom: 10px;
+  color: #ffffff;
+  font-size: 40px;
+}
+.user__desc{
+  color: #ffffff;
+  font-weight: 100;
+}

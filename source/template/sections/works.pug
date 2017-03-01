@@ -1,0 +1,44 @@
+.section.triangle
+    svg(viewBox="0 0 1000 160" preserveAspectRatio="none").triangle_left
+        polygon(points="0,0 0,160 1000,160")
+    svg(viewBox="0 0 1000 160" preserveAspectRatio="none").triangle_right
+        polygon(points="0,160 1000,160 1000,0")
+.section.works
+    .works_title
+        h1 Мои работы
+    .works_slider
+        ul.slider__list
+            li.slider__item
+                .slider-pic
+                    img.c-slider-img(src="#")
+                .slider__description
+                    .slider-title.block-title.block-title_left сайт школы онлайн образования
+                    .slider-item__skills HTML, CSS, JavaScript
+                    a.slider-btn(href='#')
+                        | Посмотреть сайт
+section.what_about
+    .what_about__title
+        h3 Что обо мне говорят
+    .what_about__reviews
+        .reviews__part-left
+            .reviews__photo
+                img(src="#").quotes__photo.quotes__photo--koval
+            .reviews__text Этоа девушка проходила обучение веб-разработке не где-то, а LoftSchool! Месяц только самых тяжелых испытаний и бессоных ночей!
+            .reviews__name Ковальчук Дмитрий
+            .reviews__sub основатель LoftSchool
+        .reviews__part-right
+            .reviews__photo
+                img(src="#").quotes__photo.quotes__photo--sabancev
+            .reviews__text Этот код выдержит любые испытания. Только, пожалуйста, не загружайте сайт на слишком старых браузерах!
+            .reviews__name Сабанцев Владимир
+            .reviews__sub преподаваль
+    .what_about__contact
+        form.contact_form
+            h3 Связаться со мной
+            .contact__input
+                input(name="name" placeholder="Имя" type="text").contact__name
+                input(name="email" placeholder="Email" type="email").contact__email
+                textarea(name="msg" placeholder="Ваше сообщение").contact__msg
+            .contact__button
+                button(type="submit" value="submit").contact__submit Отправить
+                button(type="reset" value="reset").contact__reset Очистить

@@ -1,43 +1,44 @@
 section.section_about
-    .about__col.about__col--left
-        svg(viewBox="0 0 1000 160" preserveAspectRatio="none").about__triangle
+    .triangle
+        svg(viewBox="0 0 1000 160" preserveAspectRatio="none").figure__triangle.figure__triangle--left
             polygon(points="0,0 0,160 1000,160")
-        .section__title
+        svg(viewBox="0 0 1000 160" preserveAspectRatio="none").figure__triangle.figure__triangle--right
+            polygon(points="0,160 1000,160 1000,0")
+    .section_about-left
+        .about__title
             .section__title-title Обо мне
-        .about
-            .about__img
+        .about__inform
+            .about__inform-img
                 img(src="#").about__img
-            .block__title
+            .about__inform-title
                 h1 Кто я
-            .block__text
+            .about__inform-text
                 p Я веб разработчик из Москвы. Мне 23 года. Я занимаюсь разработкой современных сайтов. Мне нравится делать интересные проекты.
                 p Этот сайт я сделала в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нем свой контент. А пока посмотрите, как тут пока не красиво :D
-    .about__col.about__col--right
-        svg(viewBox="0 0 1000 160" preserveAspectRatio="none").about__triangle
-            polygon(points="0,160 1000,160 1000,0")
+    .section_about-right
         .skills
             .block__title
                 h1 Чем я могу быть Вам полезна
             .skills__text
                 p Больше всего меня привлекает Frontend разработка, но я также знакома и могу решить не сложные задачи в Backend. Но давайте попорядку.
-                ul.skills-group
-                    li.skills-group__item
+                ul.skills_group
+                    li.skills_group-item
 section.section_map
     img(src="../assets/img/map.png").map__img
     .section_contacts
         h3.contacts__title Контакты
         ul.contacts__list
             li.contacts__item
-                img.contacts__icon(src='assets/img/skype.svg')
+                img.contacts__icon(src='#')
                 a.contacts__title(href='ritsu_1') ritsu_1
             li.contacts__item
-                img.contacts__icon(src='assets/img/envelope.svg')
+                img.contacts__icon(src='#')
                 a.contacts__title(href='mailto:ibondarenko686@gmail.com') ibondarenko686@gmail.com
             li.contacts__item
-                img.contacts__icon(src='assets/img/phone.svg')
+                img.contacts__icon(src='#')
                 a.contacts__title(href='tel:+79261994228') +7 926 199 42 28
             li.contacts__item
-                img.contacts__icon(src='assets/img/map_marker.svg')
+                img.contacts__icon(src='#')
                 span.contacts__title Moscow
 
 

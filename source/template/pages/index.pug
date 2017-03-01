@@ -1,0 +1,27 @@
+extends ../_template
+
+block content
+    .wrapper
+        .hero__bg
+            img(src='../assets/img/bg.png').hero__bg-img
+        .hero__auth
+            a.auth_button Авторизоваться
+        .user.welcome
+            .user__pic
+                img(src='./assets/img/photo.png').user__pic-container
+            .user__name Бондаренко Ирина
+            .user__desc Личный сайт веб разработчика
+            .hero__socials
+                ul.socials__list
+                    li.socials__item
+            .welcome__buttons
+                ul.buttons
+                    li.buttons_item
+                        a(href="./works.html") Мои работы
+                    li.buttons_item
+                        a(href="./about.html") Обо мне
+                    li.buttons_item
+                        a(href="./blog.html") Блог
+    footer
+        .copyright
+            p Создано с любовью в LoftSchool | 2016
