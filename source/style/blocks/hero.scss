@@ -7,10 +7,20 @@
   position: absolute;
   top: 0;
   left: 50%;
-  width: 100%;
+  width: 100vmax;
+  height: 100vmax;
   transform: translateX(-50%);
 }
-.user__container{
+.hero__top{
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  box-sizing: border-box;
+  padding: 15px;
+  width: 100%;
+}
+
+.hero__user{
   text-align: center;
   top: 50%;
   left:50%;
@@ -19,17 +29,18 @@
 }
 .user__pic-container{
   display: inline-block;
-  width: 200px;
-  height: 200px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   margin-bottom: 25px;
 }
 .user__name{
   margin-bottom: 10px;
-  color: #ffffff;
-  font-size: 40px;
+  color: #474b57;
+  font-size: 35px;
+  padding: 0px 15px 10px;
 }
 .user__desc{
-  color: #ffffff;
+  color: #474b57;
   font-weight: 100;
 }

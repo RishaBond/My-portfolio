@@ -1,0 +1,16 @@
+.figure__triangle {
+  position: absolute;
+  height: 160px;
+}
+.figure__triangle--left {
+  width: 50%;
+  left: 0;
+  bottom: 100%;
+  fill: #f2f0e8;
+}
+.figure__triangle--right {
+  width: 50%;
+  right: 0;
+  bottom: 100%;
+  fill: #f4f5f0;
+}

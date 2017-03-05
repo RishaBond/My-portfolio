@@ -1,28 +1,29 @@
-section.section_about
-    .triangle
-        svg(viewBox="0 0 1000 160" preserveAspectRatio="none").figure__triangle.figure__triangle--left
-            polygon(points="0,0 0,160 1000,160")
-        svg(viewBox="0 0 1000 160" preserveAspectRatio="none").figure__triangle.figure__triangle--right
-            polygon(points="0,160 1000,160 1000,0")
-    .section_about-left
-        .about__title
-            .section__title-title Обо мне
-        .about__inform
-            .about__inform-img
-                img(src="#").about__img
-            .about__inform-title
-                h1 Кто я
-            .about__inform-text
-                p Я веб разработчик из Москвы. Мне 23 года. Я занимаюсь разработкой современных сайтов. Мне нравится делать интересные проекты.
-                p Этот сайт я сделала в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нем свой контент. А пока посмотрите, как тут пока не красиво :D
-    .section_about-right
-        .skills
-            .block__title
-                h1 Чем я могу быть Вам полезна
-            .skills__text
-                p Больше всего меня привлекает Frontend разработка.
-                ul.skills_group
-                    li.skills_group-item
+section.section__about
+    .section__about_col
+        .about_col-left
+            svg(viewBox="0 0 1000 160" preserveAspectRatio="none").figure__triangle.figure__triangle--left
+                polygon(points="0,0 0,160 1000,160")
+            .about__title
+                .section__title-title
+                    h1 Обо мне
+            .about__inform
+                .about__inform-img
+                    img(src="./assets/img/photo.png").about__img
+                .about__inform-title
+                    h3 Кто я
+                .about__inform-text
+                    p Я веб разработчик из Москвы. Мне 23 года. Я занимаюсь разработкой современных сайтов. Мне нравится делать интересные проекты.
+                    p Этот сайт я сделала в рамках обучения в Школе онлайн образования LoftSchool. Чуть позже я освежу в нем свой контент. А пока посмотрите, как тут пока не красиво :D
+        .about_col-right
+            svg(viewBox="0 0 1000 160" preserveAspectRatio="none").figure__triangle.figure__triangle--right
+                polygon(points="0,160 1000,160 1000,0")
+            .skills
+                .block__title
+                    h2 Чем я могу быть Вам полезна
+                .skills__text
+                    p Больше всего меня привлекает Frontend разработка.
+                    ul.skills_group
+                        li.skills_group-item
 section.section_map
     img(src="./assets/img/map.png").map__img
     .section_contacts

@@ -1,0 +1,39 @@
+.section__about{
+    position: relative;
+}
+.section__about_col{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.about_col-left{
+    width: 100%;
+    box-sizing: border-box;
+    margin:0;
+    padding: 0 30px;
+    height: 835px;
+    background: #f4f5f0;
+}
+.about_col-right{
+    width: 100%;
+    box-sizing: border-box;
+    margin:0;
+    padding: 0 30px;
+    height: 835px;
+    background: #f2f0e8;
+}
+.about__img{
+    width: 360px;
+    height: 360px;
+}
+.section__title-title{
+    text-transform: uppercase;
+}
+.about__inform-text{
+    width: 430px;
+}
+.block__title{
+    width: 250px;
+    padding: 20px;
+    text-transform: uppercase;
+}
