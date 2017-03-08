@@ -17,30 +17,82 @@ section.section__about
         .about_col-right
             svg(viewBox="0 0 1000 160" preserveAspectRatio="none").figure__triangle.figure__triangle--right
                 polygon(points="0,160 1000,160 1000,0")
-            .skills
-                .block__title
-                    h2 Чем я могу быть Вам полезна
-                .skills__text
-                    p Больше всего меня привлекает Frontend разработка.
-                    ul.skills_group
-                        li.skills_group-item
-section.section_map
-    img(src="./assets/img/map.png").map__img
-    .section_contacts
+            .block__title
+                h2 Чем я могу быть Вам полезна
+            .block__text
+                p Больше всего меня привлекает Frontend разработка.
+            .scill__block
+                .scill__title Frontend
+                    ul.scill__list
+                        li.scill__item
+                            svg(class="skill__circle" viewBox="0 0 100 100" preserveAspectRatio="none")
+                                circle(class="circle-under" cx="50" cy="50" r="40")
+                                circle(class="circle-above" cx="50" cy="50" r="40" transform="rotate(-90, 50, 50)")
+                            .scill__item-title HTML
+                        li.scill__item
+                            svg(class="skill__circle" viewBox="0 0 100 100" preserveAspectRatio="none")
+                                circle(class="circle-under" cx="50" cy="50" r="40")
+                                circle(class="circle-above" cx="50" cy="50" r="40" transform="rotate(-90, 50, 50)")
+                            .scill__item-title CSS
+                        li.scill__item
+                            svg(class="skill__circle" viewBox="0 0 100 100" preserveAspectRatio="none")
+                                circle(class="circle-under" cx="50" cy="50" r="40")
+                                circle(class="circle-above" cx="50" cy="50" r="40" transform="rotate(-90, 50, 50)")
+                            .scill__item-title JavaScript & JQuery
+                .scill__title Backend
+                    ul.scill__list
+                        li.scill__item
+                            svg(class="skill__circle" viewBox="0 0 100 100" preserveAspectRatio="none")
+                                circle(class="circle-under" cx="50" cy="50" r="40")
+                                circle(class="circle-above" cx="50" cy="50" r="40" transform="rotate(-90, 50, 50)")
+                            .scill__item-title PHP
+                        li.scill__item
+                            svg(class="skill__circle" viewBox="0 0 100 100" preserveAspectRatio="none")
+                                circle(class="circle-under" cx="50" cy="50" r="40")
+                                circle(class="circle-above" cx="50" cy="50" r="40" transform="rotate(-90, 50, 50)")
+                            .scill__item-title mySQL
+                        li.scill__item
+                            svg(class="skill__circle" viewBox="0 0 100 100" preserveAspectRatio="none")
+                                circle(class="circle-under" cx="50" cy="50" r="40")
+                                circle(class="circle-above" cx="50" cy="50" r="40" transform="rotate(-90, 50, 50)")
+                            .scill__item-title Node.js & npm
+                .scill__title WorkFlow
+                    ul.scill__list
+                        li.scill__item
+                            svg(class="skill__circle" viewBox="0 0 100 100" preserveAspectRatio="none")
+                                circle(class="circle-under" cx="50" cy="50" r="40")
+                                circle(class="circle-above" cx="50" cy="50" r="40" transform="rotate(-90, 50, 50)")
+                            .scill__item-title Git
+                        li.scill__item
+                            svg(class="skill__circle" viewBox="0 0 100 100" preserveAspectRatio="none")
+                                circle(class="circle-under" cx="50" cy="50" r="40")
+                                circle(class="circle-above" cx="50" cy="50" r="40" transform="rotate(-90, 50, 50)")
+                            .scill__item-title Gulp
+                        li.scill__item
+                            svg(class="skill__circle" viewBox="0 0 100 100" preserveAspectRatio="none")
+                                circle(class="circle-under" cx="50" cy="50" r="40")
+                                circle(class="circle-above" cx="50" cy="50" r="40" transform="rotate(-90, 50, 50)")
+                            .scill__item-title Bower
+.section__map
+    .section__contacts
         h3.contacts__title Контакты
         ul.contacts__list
             li.contacts__item
-                img.contacts__icon(src='#')
-                a.contacts__title(href='ritsu_1') ritsu_1
+                svg(role="img" title="skype")
+                    use(xlink:href="./assets/img/sprite.svg#skype")
+                a.contacts__name(href='ritsu_1') ritsu_1
             li.contacts__item
-                img.contacts__icon(src='#')
-                a.contacts__title(href='mailto:ibondarenko686@gmail.com') ibondarenko686@gmail.com
+                svg(role="img" title="envelope")
+                    use(xlink:href="./assets/img/sprite.svg#envelope")
+                a.contacts__name(href='mailto:ibondarenko686@gmail.com') ibondarenko686@gmail.com
             li.contacts__item
-                img.contacts__icon(src='#')
-                a.contacts__title(href='tel:+79261994228') +7 926 199 42 28
+                svg(role="img" title="phone")
+                    use(xlink:href="./assets/img/sprite.svg#phone")
+                a.contacts__name(href='tel:+79261994228') +7 926 199 42 28
             li.contacts__item
-                img.contacts__icon(src='#')
-                span.contacts__title Moscow
+                svg(role="img" title="map_marker")
+                    use(xlink:href="./assets/img/sprite.svg#map_marker")
+                span.contacts__name Moscow
 
 
 

@@ -23,8 +23,11 @@
     background: #f2f0e8;
 }
 .about__img{
-    width: 360px;
-    height: 360px;
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 360px;
 }
 .section__title-title{
     text-transform: uppercase;

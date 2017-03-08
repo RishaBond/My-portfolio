@@ -2,6 +2,7 @@ body {
   margin: 0;
 }
 @import "blocks/hero";
-@import "blocks/index";
 @import "blocks/triangle";
-@import "blocks/about";
+@import "pages/about";
+@import "pages/index";
+@import "blocks/scills";

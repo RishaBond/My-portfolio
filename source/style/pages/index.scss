@@ -1,0 +1,52 @@
+.section_welcome{
+  height: 900px;
+  overflow: hidden;
+  position: relative;
+}
+.welcome{
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 8px;
+  text-align: center;
+  top: 50%;
+  left:50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+}
+.user__pic-container{
+  padding: 40px 20px 20px;
+}
+.welcome .user__name{
+  color: #474b57;
+}
+.welcome .user__desc{
+  color: #474b57;
+}
+.socials__item-welcome{
+  margin-right: 25px;
+  display: flex;
+  align-items: flex-end;
+}
+.socials__item-welcome svg use{
+  fill: #00bfa5;
+  width: 25px;
+  height: 25px;
+}
+.hero__socials-welcome{
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  padding: 20px;
+}
+.welcome__buttons{
+  display: flex;
+  flex-direction: row;
+}
+.welcome__buttons-item{
+  display: inline-block;
+  background: #08af9c;
+  padding: 15px 25px;
+  color: #f4f5f0;
+  text-decoration: none;
+  text-decoration: none;
+  font-weight: bold;
+}

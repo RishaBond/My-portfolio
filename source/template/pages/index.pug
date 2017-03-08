@@ -11,17 +11,24 @@ block content
                 img(src='./assets/img/photo.png').user__pic-container
             .user__name Бондаренко Ирина
             .user__desc Личный сайт веб разработчика
-            .hero__socials
+            .hero__socials-welcome
                 ul.socials__list
-                    li.socials__item
+                    li
+                        a(href="vk.com").socials__item.socials__item-welcome.socials__item-vk
+                            svg(role="img" title="vk")
+                                use(xlink:href="./assets/img/sprite.svg#vk")
+                    li
+                        a(href="github.com").socials__item.socials__item-welcome.socials__item-github
+                            svg(role="img" title="github")
+                                use(xlink:href="./assets/img/sprite.svg#github")
+                    li
+                        a(href="#").socials__item.socials__item-welcome.socials__item-in
+                            svg(role="img" title="in")
+                                use(xlink:href="./assets/img/sprite.svg#in")
             .welcome__buttons
-                ul.buttons
-                    li.buttons_item
-                        a(href="./works.html") Мои работы
-                    li.buttons_item
-                        a(href="./about.html") Обо мне
-                    li.buttons_item
-                        a(href="./blog.html") Блог
+                a(href="./works.html" class="welcome__buttons-item") Мои работы
+                a(href="./about.html" class="welcome__buttons-item") Обо мне
+                a(href="./blog.html" class="welcome__buttons-item") Блог
     footer
         .copyright
             p Создано с любовью в LoftSchool | 2016

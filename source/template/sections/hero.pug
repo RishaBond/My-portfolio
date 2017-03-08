@@ -2,12 +2,24 @@ section.section_hero
     .hero__bg
         img(src='./assets/img/bg.png').hero__bg-img
     .hero__top
-        .top__socials
+        .hero__socials
             ul.socials__list
-                li.socials__item
+                li
+                    a(href="vk.com").socials__item.socials__item-vk
+                        svg(role="img" title="vk")
+                            use(xlink:href="./assets/img/sprite.svg#vk")
+                li
+                    a(href="github.com").socials__item.socials__item-github
+                        svg(role="img" title="github")
+                            use(xlink:href="./assets/img/sprite.svg#github")
+                li
+                    a(href="#").socials__item.socials__item-in
+                        svg(role="img" title="in")
+                            use(xlink:href="./assets/img/sprite.svg#in")
         .top__menu
-            a(href="#").hamburger__link
-            img(src="#")
+            a(href="#").hamburger__item
+                svg(role="img" title="hamburger")
+                    use(xlink:href="./assets/img/sprite.svg#hamburger")
     .hero__user
         .user__pic
             img(src="./assets/img/photo.png").user__pic-container
