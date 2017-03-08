@@ -1,16 +1,17 @@
 .figure__triangle {
+  display: block;
   position: absolute;
   height: 160px;
+  top:0;
+  transform: translateY(-100%);
 }
 .figure__triangle--left {
   width: 50%;
   left: 0;
-  bottom: 100%;
   fill: #f2f0e8;
 }
 .figure__triangle--right {
   width: 50%;
   right: 0;
-  bottom: 100%;
   fill: #f4f5f0;
 }

@@ -1,24 +1,23 @@
 .footer
     .footer__row
-        ul.menu.menu--footer
-            li.menu__item
-                a(href='works.html') Мои работы
-            li.menu__item
-                a(href='about.html') Обо мне
-            li.menu__item
-                a(href='blog.html') Блог
-            li.menu__item
-                a(href='#') Авторизация
-        ul.social-icons.social-icons--footer
+        .menu--footer
+            a(href='works.html' class="menu__link") Мои работы
+            a(href='about.html' class="menu__link") Обо мне
+            a(href='blog.html' class="menu__link") Блог
+            a(href='#' class="menu__link") Авторизация
+        ul.socials__list.socials__list-footer
             li
-                a.social-icons__item(href='#')
-                    img(src='#')
+                a(href="vk.com").socials__item.socials__item-vk
+                    svg(role="img" title="vk_round")
+                        use(xlink:href="./assets/img/sprite.svg#vk_round")
             li
-                a.social-icons__item(href='#')
-                    img(src='#')
+                a(href="github.com").socials__item.socials__item-github
+                    svg(role="img" title="github_round")
+                        use(xlink:href="./assets/img/sprite.svg#github_round")
             li
-                a.social-icons__item(href='#')
-                    img(src='#')
-    .footer__about
-        | Этот сайт я сделала в рамках обучения в Школе онлайн образования LoftSchool.
-    .footer__copyright © Бондаренко Ирина | создано с любовью в LoftSchool | 2017
+                a(href="#").socials__item.socials__item-in
+                    svg(role="img" title="in_round")
+                        use(xlink:href="./assets/img/sprite.svg#in_round")
+    .footer__row
+        .footer__about Я веб-разработчик из Москвы и этот сайт я сделала в рамках обучения в Школе онлайн образования LoftSchool.
+        .footer__copyright © Бондаренко Ирина | создано с любовью в LoftSchool | 2017
