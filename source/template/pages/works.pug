@@ -1,11 +1,9 @@
-extends ../layout
+extends ../_template
 
-block hero
+block title
+    - var title='Мои работы'
+
+block content
     include ../sections/hero
-
-block main_content
     include ../sections/works
-
-block footer
     include ../sections/footer
-

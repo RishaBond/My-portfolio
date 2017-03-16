@@ -11,6 +11,18 @@
   height: 100vmax;
   transform: translateX(-50%);
 }
+.inscription{
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  top: 50%;
+  left: 50%;
+  opacity: 0.2;
+  transform: translate(-50%, -50%);
+}
+.inscription use{
+  fill: #ffffff;
+}
 .hero__top{
   display: flex;
   justify-content: space-between;
@@ -40,6 +52,7 @@
 }
 .user__desc{
   color: #ffffff;
+  opacity:0.75;
   font-weight: 100;
 }
 .socials__item{

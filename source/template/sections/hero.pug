@@ -1,6 +1,15 @@
 section.section_hero
     .hero__bg
         img(src='./assets/img/bg.png').hero__bg-img
+    if title='Обо мне'
+        svg(class="inscription" role="img" title="about")
+            use(xlink:href="./assets/img/sprite.svg#about_header")
+    else if title='Блог'
+            svg(class="inscription" role="img" title="blog")
+                use(xlink:href="./assets/img/sprite.svg#blog_header")
+    else if title='Мои работы'
+        svg(class="inscription" role="img" title="portfolio")
+            use(xlink:href="./assets/img/sprite.svg#portfolio_header")
     .hero__top
         .hero__socials
             ul.socials__list
@@ -20,10 +29,21 @@ section.section_hero
             a(href="#").hamburger__item
                 svg(role="img" title="hamburger")
                     use(xlink:href="./assets/img/sprite.svg#hamburger")
-    .hero__user
-        .user__pic
-            img(src="./assets/img/photo.png").user__pic-container
-        .user__name Бондаренко Ирина
-        .user__desc Личный сайт веб разработчика
+                    button(class="hamburger-btn" type="button")
+                        .hamburger-menu
 
-
+    if title !== 'Блог'
+        .hero__user
+            .user__pic
+                img(src="./assets/img/photo.png").user__pic-container
+            .user__name Бондаренко Ирина
+            .user__desc Личный сайт веб разработчика
+    else
+        .hero__user
+            .user__pic
+                img(src="./assets/img/photo.png").user__pic-container
+            .user__name Блог
+            .user__desc Статьи, которые я написала
+    a(class="scroll-link scroll-link_down" href="#")
+        svg(class="portf_arrow_down" role="img" title="down")
+            use(xlink:href='assets/img/sprite/sprite.svg#portf_arrow_down')

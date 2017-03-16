@@ -1,11 +1,9 @@
-extends ../layout
+extends ../_template
 
-block hero
-    include ../sections/hero_blog
+block title
+    - var title='Блог'
 
-block main_content
+block content
+    include ../sections/hero
     include ../sections/blog
-
-block footer
     include ../sections/footer
-

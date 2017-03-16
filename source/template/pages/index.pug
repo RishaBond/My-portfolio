@@ -1,5 +1,8 @@
 extends ../_template
 
+block title
+    - var title='Главная страница'
+
 block content
     .section_welcome
         .hero__bg
@@ -29,6 +32,4 @@ block content
                 a(href="./works.html" class="welcome__buttons-item") Мои работы
                 a(href="./about.html" class="welcome__buttons-item") Обо мне
                 a(href="./blog.html" class="welcome__buttons-item") Блог
-    footer
-        .copyright
-            p Создано с любовью в LoftSchool | 2016
+        .welcome__footer Создано с любовью в LoftSchool | 2017
