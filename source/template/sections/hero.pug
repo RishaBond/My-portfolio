@@ -1,13 +1,13 @@
 section.section_hero
     .hero__bg
         img(src='./assets/img/bg.png').hero__bg-img
-    if title='Обо мне'
+    if title=='Обо мне'
         svg(class="inscription" role="img" title="about")
             use(xlink:href="./assets/img/sprite.svg#about_header")
-    else if title='Блог'
+    else if title=='Блог'
             svg(class="inscription" role="img" title="blog")
                 use(xlink:href="./assets/img/sprite.svg#blog_header")
-    else if title='Мои работы'
+    else if title=='Мои работы'
         svg(class="inscription" role="img" title="portfolio")
             use(xlink:href="./assets/img/sprite.svg#portfolio_header")
     .hero__top
