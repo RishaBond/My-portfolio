@@ -26,11 +26,23 @@ section.section_hero
                         svg(role="img" title="in")
                             use(xlink:href="./assets/img/sprite.svg#in")
         .top__menu
-            a(href="#").hamburger__item
-                svg(role="img" title="hamburger")
-                    use(xlink:href="./assets/img/sprite.svg#hamburger")
-                    button(class="hamburger-btn" type="button")
-                        .hamburger-menu
+            .outer-menu
+                input.checkbox-toggle(type='checkbox')
+                .hamburger
+                    div
+                .menu
+                    div
+                        div
+                            ul
+                                li
+                                    a(href='index.html') Главная страница
+                                li
+                                    a(href='about.html') Обо мне
+                                li
+                                    a(href='blog.html') Блог
+                                li
+                                    a(href='works.html') Мои работы
+                span.cls
 
     if title !== 'Блог'
         .hero__user
