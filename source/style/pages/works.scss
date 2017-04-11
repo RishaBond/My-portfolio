@@ -27,7 +27,7 @@
 .section__title h2{
   display: block;
   text-transform: uppercase;
-  font-size: 3em;
+  font-size: 45px;
   font-weight: bold;
 }
 .section.portfolio__site {
@@ -41,24 +41,46 @@
   overflow: hidden;
   max-height: 1200px;
 }
+.what_about h2{
+  margin: 15px auto;
+  padding: 30px;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 40px;
+}
 .down_bg{
   position: absolute;
   width: 100%;
   display: block;
 }
 .what_about__reviews{
-  columns: 2;
+  overflow: hidden;
   position: relative;
-  max-height: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.reviews__part{
+  box-sizing: border-box;
+  max-height: 500px;
+  max-width: 400px;
+  width: 50%;
+  padding: 40px;
+  margin: 40px 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: left;
 }
 .what_about__contact{
   margin: auto;
   padding: 25px;
-  border-radius: 20px;
+  border-radius: 15px;
   position: relative;
-  max-height: 450px;
+  max-height: 500px;
   max-width: 400px;
-  background: rgba(225, 225, 225, 0.8);
+  background: rgba(225, 225, 225, 0.7);
+  filter: blur(5px);
   box-sizing: border-box;
 }
 .contact_form h3{
@@ -66,4 +88,17 @@
   text-align: center;
   left: 50%;
   padding: 0 110px;
+}
+.contact__button{
+  display: flex;
+  flex-direction: row;
+}
+.button__items{
+  display: inline-block;
+  background: #08af9c;
+  padding: 15px 25px;
+  color: #f4f5f0;
+  text-decoration: none;
+  text-decoration: none;
+  font-weight: bold;
 }
