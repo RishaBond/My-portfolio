@@ -1,17 +1,19 @@
 .section.section__works
-    .section__works-content
-        .tringle
-            svg(viewBox="0 0 1000 160" preserveAspectRatio="none").figure__triangle.figure__triangle--left
+    .figure__triangle
+        .figure__triangle--left
+            svg(viewBox="0 0 1000 160" preserveAspectRatio="none")
                 polygon(points="0,0 0,160 1000,160")
-            svg(viewBox="0 0 1000 160" preserveAspectRatio="none").figure__triangle.figure__triangle--right
+        .figure__triangle--right
+            svg(viewBox="0 0 1000 160" preserveAspectRatio="none")
                 polygon(points="0,160 1000,160 1000,0")
+    .section__works-content
         .section__title
             h2 Мои работы
         .section.portfolio__site
             img(src="./assets/img/Slider.png")
     .what_about
-        .what_about__title
-            h3 Что обо мне говорят
+        img(src="../assets/img/down_bg.png").down_bg
+        h2 Что обо мне говорят
         .what_about__reviews
             .reviews__part-left
                 .reviews__photo
@@ -25,13 +27,13 @@
                 .reviews__text Этот код выдержит любые испытания. Только, пожалуйста, не загружайте сайт на слишком старых браузерах!
                 .reviews__name Сабанцев Владимир
                 .reviews__sub преподаваль
-    .what_about__contact
-        form.contact_form
-            h3 Связаться со мной
-            .contact__input
-                input(name="name" placeholder="Имя" type="text").contact__name
-                input(name="email" placeholder="Email" type="email").contact__email
-                textarea(name="msg" placeholder="Ваше сообщение").contact__msg
-            .contact__button
-                button(type="submit" value="submit").contact__submit Отправить
-                button(type="reset" value="reset").contact__reset Очистить
+        .what_about__contact
+            form.contact_form
+                h3 Связаться со мной
+                .contact__input
+                    input(name="name" placeholder="Имя" type="text").contact__name
+                    input(name="email" placeholder="Email" type="email").contact__email
+                    textarea(name="msg" placeholder="Ваше сообщение").contact__msg
+                .contact__button
+                    button(type="submit" value="submit").contact__submit Отправить
+                    button(type="reset" value="reset").contact__reset Очистить

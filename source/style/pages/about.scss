@@ -1,5 +1,6 @@
 .section__about{
     position: relative;
+    height: 900px;
 }
 .section__about_col{
     display:flex;
@@ -12,7 +13,7 @@
     margin:0;
     padding: 0 30px;
     height: 835px;
-    background: #f4f5f0;
+    background: #fff;
 }
 .about_col-right{
     width: 100%;
@@ -20,7 +21,7 @@
     margin:0;
     padding: 0 30px;
     height: 835px;
-    background: #f2f0e8;
+    background: #fff;
 }
 .about__img{
     display: block;
@@ -42,11 +43,11 @@
 }
 .section__contacts{
     box-sizing: border-box;
-    top: 30%;
+    top:25%;
     margin: auto;
     padding: 25px;
-    background: rgba(225, 225, 225, 0.8);
-    border-radius: 15px;
+    background: rgba(225, 225, 225, 0.9);
+    border-radius: 20px;
     height: 300px;
     width: 380px;
     position: relative;

@@ -1,17 +1,18 @@
 .figure__triangle {
-  display: block;
-  position: absolute;
-  height: 160px;
-  top:0;
+  display: flex;
+  align-content: flex-end;
+  position: relative;
+  box-sizing: border-box;
   transform: translateY(-100%);
+  margin-top: 4px;
 }
 .figure__triangle--left {
   width: 50%;
   left: 0;
-  fill: #f2f0e8;
+  fill: #fff;
 }
 .figure__triangle--right {
   width: 50%;
   right: 0;
-  fill: #f4f5f0;
+  fill: #fff;
 }

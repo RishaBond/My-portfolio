@@ -1,6 +1,6 @@
 .section_hero{
   width: 100%;
-  height: 700px;
+  height: 800px;
   overflow: hidden;
   position: relative;
 }
@@ -100,6 +100,21 @@
   height: 40px;
 }
 .hamburger__item svg use{
+  fill: #fff;
+}
+.scroll-link_down {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 15px;
+  top: 700px;
+}
+.scroll-link_down svg{
+  width: 30px;
+  height: 30px;
+}
+.scroll-link_down use{
   fill: #fff;
 }
 .outer-menu {
@@ -239,7 +254,7 @@
   width: 200vw;
   height: 200vw;
   color: #FEFEFE;
-  background:rgba(18, 189, 165, 0.7);
+  background:rgba(72, 203, 234, 0.7);
   border-radius: 50%;
   -webkit-transition: all 0.4s ease;
   transition: all 0.4s ease;

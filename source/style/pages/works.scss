@@ -8,7 +8,7 @@
   flex-direction: column;
 }
 .tringle{
-  width: 100%;
+  max-width: 100%;
   box-sizing: border-box;
   margin:0;
   background: #ffffff;
@@ -31,9 +31,39 @@
   font-weight: bold;
 }
 .section.portfolio__site {
-  width: 100%;
+  max-width: 100%;
 
   & img {
-    width: 100%;
+    max-width: 100%;
   }
+}
+.what_about{
+  overflow: hidden;
+  max-height: 1200px;
+}
+.down_bg{
+  position: absolute;
+  width: 100%;
+  display: block;
+}
+.what_about__reviews{
+  columns: 2;
+  position: relative;
+  max-height: 400px;
+}
+.what_about__contact{
+  margin: auto;
+  padding: 25px;
+  border-radius: 20px;
+  position: relative;
+  max-height: 450px;
+  max-width: 400px;
+  background: rgba(225, 225, 225, 0.8);
+  box-sizing: border-box;
+}
+.contact_form h3{
+  display: inline-block;
+  text-align: center;
+  left: 50%;
+  padding: 0 110px;
 }
