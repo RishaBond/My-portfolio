@@ -39,9 +39,10 @@
 }
 .what_about{
   overflow: hidden;
-  max-height: 1200px;
+  max-height: 1400px;
 }
 .what_about h2{
+  position: relative;
   margin: 15px auto;
   padding: 30px;
   box-sizing: border-box;
@@ -52,53 +53,113 @@
   position: absolute;
   width: 100%;
   display: block;
+  bottom: 0;
+  overflow: hidden;
+  margin-bottom: -100px;
 }
 .what_about__reviews{
   overflow: hidden;
   position: relative;
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  margin: 20px auto;
 }
 .reviews__part{
+  flex: 1;
   box-sizing: border-box;
   max-height: 500px;
   max-width: 400px;
-  width: 50%;
-  padding: 40px;
   margin: 40px 10px;
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  flex-basis: 400px;
+}
+.quotes__photo{
+  margin: 15px;
+}
+.reviews__text{
+  width: 100%;
   text-align: left;
+  font-style: italic;
+  line-height: 27px;
+}
+.reviews__author{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
 }
 .what_about__contact{
-  margin: auto;
-  padding: 25px;
-  border-radius: 15px;
+  margin: 100px auto;
   position: relative;
   max-height: 500px;
   max-width: 400px;
-  background: rgba(225, 225, 225, 0.7);
-  filter: blur(5px);
+  background: rgba(225, 225, 225, 0.4);
   box-sizing: border-box;
+  box-shadow: 0 0 25px rgba(225, 225, 225, 0.5);
 }
-.contact_form h3{
+.contact_form{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  position: relative;
+}
+.contact_form h3 {
   display: inline-block;
   text-align: center;
-  left: 50%;
-  padding: 0 110px;
+  font-size: 25px;
+  text-transform: uppercase;
+}
+.contact__input{
+  background: rgba(255, 255, 255, 0.6);
+  margin: 10px auto;
+  padding: 0 10px;
+  width: 80%;
+  height: 40px;
+  border: none;
+  outline: none;
+}
+.contact__msg{
+  background: rgba(255, 255, 255, 0.6);
+  margin: 10px auto 20px;
+  padding: 10px;
+  width: 80%;
+  height: 70px;
+  border: none;
+  outline: none;
 }
 .contact__button{
   display: flex;
   flex-direction: row;
 }
-.button__items{
-  display: inline-block;
-  background: #08af9c;
+.form_button{
+  flex: 1;
+  background: none;
+  border: none;
   padding: 15px 25px;
+  width: 100%;
   color: #f4f5f0;
   text-decoration: none;
-  text-decoration: none;
   font-weight: bold;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.form_button:hover{
+  background: rgba(89, 173, 193, 0.6);
+  border: none;
+}
+.form_button:active{
+  background: rgba(55, 145, 166, 1);
+  border: none;
+}
+.form_button__active{
+  background: rgba(55, 145, 166, 0.7);
+}
+.form_button__active:hover{
+  background: rgba(55, 145, 166, 0.8);
 }

@@ -16,24 +16,27 @@
         h2 Что обо мне говорят
         .what_about__reviews
             .reviews__part
-                .reviews__photo
-                    img(src="#").quotes__photo.quotes__photo--koval
                 .reviews__text Этоа девушка проходила обучение веб-разработке не где-то, а LoftSchool! Месяц только самых тяжелых испытаний и бессоных ночей!
-                .reviews__name Ковальчук Дмитрий
-                .reviews__sub основатель LoftSchool
+                .reviews__author
+                    img(src="../assets/img/8.png").quotes__photo.quotes__photo--koval
+                    .reviews__name
+                        strong Ковальчук Дмитрий
+                        br
+                        | основатель LoftSchool
             .reviews__part
-                .reviews__photo
-                    img(src="#").quotes__photo.quotes__photo--sabancev
                 .reviews__text Этот код выдержит любые испытания. Только, пожалуйста, не загружайте сайт на слишком старых браузерах!
-                .reviews__name Сабанцев Владимир
-                .reviews__sub преподаваль
+                .reviews__author
+                    img(src="../assets/img/9.png").quotes__photo.quotes__photo--sabancev
+                    .reviews__name
+                        strong Сабанцев Владимир
+                        br
+                        | преподаваль
         .what_about__contact
             form.contact_form
                 h3 Связаться со мной
-                .contact__input
-                    input(name="name" placeholder="Имя" type="text").contact__name
-                    input(name="email" placeholder="Email" type="email").contact__email
-                    textarea(name="msg" placeholder="Ваше сообщение").contact__msg
+                input(name="name" placeholder="Имя" type="text").contact__input
+                input(name="email" placeholder="Email" type="email").contact__input
+                textarea(name="msg" placeholder="Ваше сообщение").contact__msg
                 .contact__button
-                    button(type="submit" value="submit").button__items Отправить
-                    button(type="reset" value="reset").button__items Очистить
+                    button(type="submit" value="submit").form_button.form_button__active Отправить
+                    button(type="reset" value="reset").form_button Очистить
