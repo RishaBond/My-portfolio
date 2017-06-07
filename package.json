@@ -29,5 +29,16 @@
   },
   "dependencies": {
     "normalize.css": "~5.0.0"
-  }
+  },
+  "description": "Учебная сборка Loftschool.",
+  "main": "gulpfile.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RishaBond/portfolio.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/RishaBond/portfolio/issues"
+  },
+  "homepage": "https://github.com/RishaBond/portfolio#readme"
 }
